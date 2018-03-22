@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "test": "testcafe chrome test/specs/*.js -r xunit:reports/report.xml,spec"
+    "test": "testcafe chrome test/specs/*.js -r xunit:report.xml,spec -S -s tmp/artifacts"
   },
   "devDependencies": {
     "testcafe": "^0.18.4",
