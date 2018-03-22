@@ -1,9 +1,9 @@
 {
   "scripts": {
-    "test": "testcafe chrome test/specs/* -r xunit:/tmp/test-results/res.xml"
+    "test": "testcafe chrome test/specs/*.js -r xunit:reports/report.xml,spec"
   },
   "devDependencies": {
-      "testcafe": "^0.18.4",
-      "testcafe-reporter-xunit": "^2.1.0"
+    "testcafe": "^0.18.4",
+    "testcafe-reporter-xunit": "^2.1.0"
   }
 }
