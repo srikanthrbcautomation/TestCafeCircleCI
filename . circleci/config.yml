@@ -14,14 +14,12 @@ jobs:
       # CircleCI maintains a library of pre-built images
       # documented at https://circleci.com/docs/2.0/circleci-images/
       # - image: circleci/mongo:3.4.4
-
-    working_directory: ~/repo
-
+      
   steps:
         - checkout
         - run:
             name: Update npm
-            command: 'sudo npm install -g npm@latest'
+            command: 'sudo npm install'
         - restore_cache:
             key: dependency-cache-{{ checksum "package.json" }}
         - run:
