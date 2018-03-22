@@ -37,4 +37,5 @@ jobs:
       - run: yarn test
 
       - store_test_results:
-          path: /reports
+          path: /tmp/test-results
+
